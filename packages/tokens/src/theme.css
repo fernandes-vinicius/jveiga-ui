@@ -1,0 +1,165 @@
+/*
+ * @jveiga-ui/tokens — tema visual do J Veiga UI.
+ *
+ * Valores extraídos de jveiga-dash-comercial (fonte visual, ver
+ * PLANO_DESIGN_SYSTEM_J_VEIGA.md, seção "Tokens: de onde vem cada coisa").
+ * Nomenclatura das variáveis semânticas (--background, --primary, etc.)
+ * segue a convenção shadcn/ui vista em jveiga-admin, para que os
+ * componentes de @jveiga-ui/ui (construídos com utilitários Tailwind tipo
+ * `bg-primary`) funcionem sem tradução.
+ *
+ * Consumidor: `@import "@jveiga-ui/tokens/theme.css";` depois de
+ * `@import "tailwindcss";` no globals.css do app.
+ *
+ * Importa `tw-animate-css` (utilitários de animação, ex. accordion) e
+ * `shadcn/tailwind.css` (custom variants do shadcn/ui — `data-horizontal`,
+ * `data-vertical`, `data-checked`, etc. — usados pelos componentes de
+ * @jveiga-ui/ui que foram portados do padrão shadcn/jveiga-admin; sem
+ * esse import essas variants não existem no Tailwind puro e os
+ * componentes ficam sem estilo silenciosamente).
+ */
+
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+:root {
+  /* Neutros (crus, de jveiga-dash-comercial) */
+  --jv-ink: #0f172a;
+  --jv-ink-soft: #334155;
+  --jv-ink-mute: #64748b;
+  --jv-ink-dim: #94a3b8;
+
+  --jv-bg: #eef3fa;
+  --jv-card: #ffffff;
+  --jv-line: #e9edf4;
+  --jv-line-soft: #f1f4f9;
+  --jv-line-strong: #d8dfe9;
+
+  /* Paleta categórica (crua) — 50 = fundo suave, 600 = tom principal, 700 = tom forte */
+  --jv-rose-50: #fff1f2;
+  --jv-rose-600: #fb7185;
+  --jv-rose-700: #be123c;
+
+  --jv-amber-50: #fff7ed;
+  --jv-amber-600: #fbbf24;
+  --jv-amber-700: #b45309;
+
+  --jv-emerald-50: #ecfdf5;
+  --jv-emerald-600: #34d399;
+  --jv-emerald-700: #047857;
+
+  --jv-blue-50: #eff6ff;
+  --jv-blue-100: #dbeafe;
+  --jv-blue-600: #3b82f6;
+  --jv-blue-700: #1d4ed8;
+  --jv-blue-800: #1e40af;
+
+  --jv-violet-50: #f5f3ff;
+  --jv-violet-600: #a78bfa;
+  --jv-violet-700: #6d28d9;
+
+  --jv-sky-50: #f0f9ff;
+  --jv-sky-600: #38bdf8;
+
+  --jv-teal-50: #f0fdfa;
+  --jv-teal-600: #2dd4bf;
+  --jv-teal-700: #0f766e;
+
+  --jv-pink-50: #fdf2f8;
+  --jv-pink-600: #ec4899;
+  --jv-pink-700: #be185d;
+
+  /* Azul de marca (chrome de destaque, ex. header) — distinto do azul de
+     acento geral (--jv-blue-700), que é o usado em --primary abaixo. */
+  --jv-brand: #1226aa;
+
+  --jv-shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --jv-shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.04);
+  --jv-shadow-md: 0 10px 28px -12px rgba(15, 23, 42, 0.18);
+
+  /* Semânticos (convenção shadcn) — preenchidos com os valores crus acima */
+  --background: var(--jv-bg);
+  --foreground: var(--jv-ink);
+
+  --card: var(--jv-card);
+  --card-foreground: var(--jv-ink);
+  --popover: var(--jv-card);
+  --popover-foreground: var(--jv-ink);
+
+  --primary: var(--jv-blue-700);
+  --primary-foreground: #ffffff;
+
+  --secondary: var(--jv-line);
+  --secondary-foreground: var(--jv-ink);
+
+  --muted: var(--jv-line-soft);
+  --muted-foreground: var(--jv-ink-mute);
+
+  --accent: var(--jv-blue-50);
+  --accent-foreground: var(--jv-blue-800);
+
+  --destructive: var(--jv-rose-700);
+  --destructive-foreground: #ffffff;
+
+  --border: var(--jv-line);
+  --input: var(--jv-line-strong);
+  --ring: var(--jv-blue-600);
+
+  --chart-1: var(--jv-blue-600);
+  --chart-2: var(--jv-violet-600);
+  --chart-3: var(--jv-emerald-600);
+  --chart-4: var(--jv-amber-600);
+  --chart-5: var(--jv-rose-600);
+  --chart-6: var(--jv-sky-600);
+  --chart-7: var(--jv-teal-600);
+  --chart-8: var(--jv-pink-600);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-chart-6: var(--chart-6);
+  --color-chart-7: var(--chart-7);
+  --color-chart-8: var(--chart-8);
+
+  --color-brand: var(--jv-brand);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --shadow-xs: var(--jv-shadow-xs);
+  --shadow-sm: var(--jv-shadow-sm);
+  --shadow-md: var(--jv-shadow-md);
+
+  --font-sans:
+    "Outfit", "Outfit Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
