@@ -28,7 +28,7 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - run: pnpm turbo run build --filter=storybook
+      - run: pnpm turbo run build --filter=@fernandes-vinicius/jveiga-ui-storybook
         env:
           STORYBOOK_BASE_PATH: /jveiga-ui/
 

@@ -1,6 +1,6 @@
 {
   "name": "@fernandes-vinicius/jveiga-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Componentes construídos com shadcn/ui + Radix + CVA como scaffolding interno; compilado (tsdown) e publicado como pacote npm real, importado direto pelos apps consumidores (roadmap passo 3-4).",
   "type": "module",
   "main": "./dist/index.js",

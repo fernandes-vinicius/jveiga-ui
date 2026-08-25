@@ -29,7 +29,7 @@ jobs:
       - run: pnpm turbo run lint test build typecheck
 
       - name: Install Playwright browsers
-        run: pnpm --filter storybook exec playwright install --with-deps chromium
+        run: pnpm --filter @fernandes-vinicius/jveiga-ui-storybook exec playwright install --with-deps chromium
 
       - name: Storybook Test Runner (visual/interaction/a11y)
-        run: pnpm --filter storybook exec concurrently -k -s first -n "SB,TEST" "pnpm --filter storybook exec http-server storybook-static --port 6006 --silent" "pnpm --filter storybook exec wait-on tcp:6006 && pnpm --filter storybook run test-storybook --url http://127.0.0.1:6006"
+        run: pnpm --filter @fernandes-vinicius/jveiga-ui-storybook exec concurrently -k -s first -n "SB,TEST" "pnpm --filter @fernandes-vinicius/jveiga-ui-storybook exec http-server storybook-static --port 6006 --silent" "pnpm --filter @fernandes-vinicius/jveiga-ui-storybook exec wait-on tcp:6006 && pnpm --filter @fernandes-vinicius/jveiga-ui-storybook run test-storybook --url http://127.0.0.1:6006"
