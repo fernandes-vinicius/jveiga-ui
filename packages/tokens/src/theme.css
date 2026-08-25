@@ -1,20 +1,20 @@
 /*
- * @jveiga-ui/tokens — tema visual do J Veiga UI.
+ * @fernandes-vinicius/jveiga-tokens — tema visual do J Veiga UI.
  *
  * Valores extraídos de jveiga-dash-comercial (fonte visual, ver
  * PLANO_DESIGN_SYSTEM_J_VEIGA.md, seção "Tokens: de onde vem cada coisa").
  * Nomenclatura das variáveis semânticas (--background, --primary, etc.)
  * segue a convenção shadcn/ui vista em jveiga-admin, para que os
- * componentes de @jveiga-ui/ui (construídos com utilitários Tailwind tipo
+ * componentes de @fernandes-vinicius/jveiga-ui (construídos com utilitários Tailwind tipo
  * `bg-primary`) funcionem sem tradução.
  *
- * Consumidor: `@import "@jveiga-ui/tokens/theme.css";` depois de
+ * Consumidor: `@import "@fernandes-vinicius/jveiga-tokens/theme.css";` depois de
  * `@import "tailwindcss";` no globals.css do app.
  *
  * Importa `tw-animate-css` (utilitários de animação, ex. accordion) e
  * `shadcn/tailwind.css` (custom variants do shadcn/ui — `data-horizontal`,
  * `data-vertical`, `data-checked`, etc. — usados pelos componentes de
- * @jveiga-ui/ui que foram portados do padrão shadcn/jveiga-admin; sem
+ * @fernandes-vinicius/jveiga-ui que foram portados do padrão shadcn/jveiga-admin; sem
  * esse import essas variants não existem no Tailwind puro e os
  * componentes ficam sem estilo silenciosamente).
  */

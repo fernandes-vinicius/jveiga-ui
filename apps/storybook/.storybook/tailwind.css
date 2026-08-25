@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@jveiga-ui/tokens/theme.css";
+@import "@fernandes-vinicius/jveiga-tokens/theme.css";
 @source "../../../packages";
 
 body {
