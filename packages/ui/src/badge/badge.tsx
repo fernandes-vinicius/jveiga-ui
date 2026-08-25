@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Slot } from "radix-ui";

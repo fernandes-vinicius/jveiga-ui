@@ -18,6 +18,10 @@ export default defineConfig({
       "sonner",
     ],
   },
+  // rolldown não preserva a diretiva "use client" dos módulos de origem ao
+  // fazer bundle num único arquivo — todo componente aqui é Radix/client,
+  // então forçamos via banner em vez de depender do bundler.
+  banner: '"use client";',
   dts: true,
   clean: true,
 });

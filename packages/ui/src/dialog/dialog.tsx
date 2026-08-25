@@ -1,3 +1,5 @@
+"use client";
+
 import { XIcon } from "@fernandes-vinicius/jveiga-icons";
 import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { Dialog as DialogPrimitive } from "radix-ui";

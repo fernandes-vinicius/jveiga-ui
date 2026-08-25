@@ -1,3 +1,5 @@
+"use client";
+
 import { CheckIcon, ChevronDownIcon } from "@fernandes-vinicius/jveiga-icons";
 import { cn } from "@fernandes-vinicius/jveiga-utils";
 import * as React from "react";

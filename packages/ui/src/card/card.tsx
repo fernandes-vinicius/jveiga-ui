@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@fernandes-vinicius/jveiga-utils";
 import type * as React from "react";
 

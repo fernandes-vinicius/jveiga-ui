@@ -1,3 +1,5 @@
+"use client";
+
 import { CheckIcon } from "@fernandes-vinicius/jveiga-icons";
 import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { Checkbox as CheckboxPrimitive } from "radix-ui";

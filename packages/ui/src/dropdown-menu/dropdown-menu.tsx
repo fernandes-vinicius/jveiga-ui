@@ -1,3 +1,5 @@
+"use client";
+
 import { CheckIcon, ChevronRightIcon } from "@fernandes-vinicius/jveiga-icons";
 import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui";

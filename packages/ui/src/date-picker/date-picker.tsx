@@ -1,3 +1,5 @@
+"use client";
+
 import { CalendarDaysIcon } from "@fernandes-vinicius/jveiga-icons";
 import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { format } from "date-fns";

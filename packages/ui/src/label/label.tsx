@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { Label as LabelPrimitive } from "radix-ui";
 import type * as React from "react";
