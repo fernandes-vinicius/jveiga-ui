@@ -1,5 +1,5 @@
-import { CheckIcon } from "@jveiga-ui/icons";
-import { cn } from "@jveiga-ui/utils";
+import { CheckIcon } from "@fernandes-vinicius/jveiga-icons";
+import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { Checkbox as CheckboxPrimitive } from "radix-ui";
 import type * as React from "react";
 

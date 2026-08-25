@@ -4,7 +4,7 @@ import {
   InfoIcon,
   Loader2Icon,
   OctagonXIcon,
-} from "@jveiga-ui/icons";
+} from "@fernandes-vinicius/jveiga-icons";
 import type * as React from "react";
 import { Toaster as Sonner, type ToasterProps, toast } from "sonner";
 

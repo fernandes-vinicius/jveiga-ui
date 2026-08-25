@@ -1,5 +1,5 @@
-import { SearchIcon } from "@jveiga-ui/icons";
-import { cn } from "@jveiga-ui/utils";
+import { SearchIcon } from "@fernandes-vinicius/jveiga-icons";
+import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { Command as CommandPrimitive } from "cmdk";
 import type * as React from "react";
 

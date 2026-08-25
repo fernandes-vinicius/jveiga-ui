@@ -1,4 +1,4 @@
-import { InfoIcon, OctagonXIcon } from "@jveiga-ui/icons";
+import { InfoIcon, OctagonXIcon } from "@fernandes-vinicius/jveiga-icons";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Alert, AlertDescription, AlertTitle } from "./alert";
 

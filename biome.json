@@ -1,6 +1,6 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.5.9/schema.json",
-  "extends": ["@jveiga-ui/biome-config/biome"],
+  "extends": ["@fernandes-vinicius/jveiga-biome-config/biome"],
   "vcs": {
     "enabled": true,
     "clientKind": "git",

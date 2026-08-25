@@ -1,5 +1,8 @@
-import { ChevronLeftIcon, ChevronRightIcon } from "@jveiga-ui/icons";
-import { cn } from "@jveiga-ui/utils";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@fernandes-vinicius/jveiga-icons";
+import { cn } from "@fernandes-vinicius/jveiga-utils";
 import type * as React from "react";
 import { type Button, buttonVariants } from "../button";
 

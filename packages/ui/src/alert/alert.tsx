@@ -1,4 +1,4 @@
-import { cn } from "@jveiga-ui/utils";
+import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import type * as React from "react";
 

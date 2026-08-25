@@ -1,8 +1,8 @@
 {
-  "name": "@jveiga-ui/biome-config",
+  "name": "@fernandes-vinicius/jveiga-biome-config",
   "version": "0.0.0",
   "private": true,
-  "description": "Config Biome compartilhada do J Veiga UI — repos consumidores podem \"extends\": [\"@jveiga-ui/biome-config/biome\"] no próprio biome.json.",
+  "description": "Config Biome compartilhada do J Veiga UI — repos consumidores podem \"extends\": [\"@fernandes-vinicius/jveiga-biome-config/biome\"] no próprio biome.json.",
   "type": "module",
   "exports": {
     "./biome": "./biome.json"

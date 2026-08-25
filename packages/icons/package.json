@@ -1,7 +1,6 @@
 {
-  "name": "@jveiga-ui/icons",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@fernandes-vinicius/jveiga-icons",
+  "version": "0.1.0",
   "description": "Wrapper curado sobre lucide-react (mesmo padrão do jveiga-admin: apps importam ícones daqui, nunca direto de lucide-react). Cobre todos os ícones usados no jveiga-dash-comercial.",
   "type": "module",
   "main": "./dist/index.js",
@@ -15,6 +14,15 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandes-vinicius/jveiga-ui.git",
+    "directory": "packages/icons"
+  },
   "scripts": {
     "build": "tsdown",
     "lint": "biome check .",

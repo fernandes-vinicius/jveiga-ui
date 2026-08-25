@@ -1,5 +1,9 @@
-import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "@jveiga-ui/icons";
-import { cn } from "@jveiga-ui/utils";
+import {
+  CheckIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+} from "@fernandes-vinicius/jveiga-icons";
+import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { Select as SelectPrimitive } from "radix-ui";
 import type * as React from "react";
 

@@ -13,11 +13,15 @@
     "format": "biome format --write .",
     "storybook": "pnpm --filter storybook dev",
     "test": "turbo run test",
-    "typecheck": "turbo run typecheck"
+    "typecheck": "turbo run typecheck",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=./packages/* && changeset publish"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.9",
-    "@jveiga-ui/biome-config": "workspace:*",
+    "@changesets/cli": "^3.0.1",
+    "@fernandes-vinicius/jveiga-biome-config": "workspace:*",
     "turbo": "^2.5.0",
     "typescript": "^5.9.0",
     "vitest": "^3.2.0"

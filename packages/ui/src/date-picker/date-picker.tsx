@@ -1,5 +1,5 @@
-import { CalendarDaysIcon } from "@jveiga-ui/icons";
-import { cn } from "@jveiga-ui/utils";
+import { CalendarDaysIcon } from "@fernandes-vinicius/jveiga-icons";
+import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import * as React from "react";

@@ -1,4 +1,5 @@
-import { Toaster } from "@jveiga-ui/ui";
+import { Toaster } from "@fernandes-vinicius/jveiga-ui";
+import { withThemeByClassName } from "@storybook/addon-themes";
 import type { Preview } from "@storybook/react-vite";
 import "./tailwind.css";
 
@@ -10,12 +11,15 @@ const preview: Preview = {
         <Toaster />
       </>
     ),
+    withThemeByClassName({
+      themes: {
+        light: "",
+        dark: "dark",
+      },
+      defaultTheme: "light",
+    }),
   ],
   parameters: {
-    backgrounds: {
-      default: "app",
-      values: [{ name: "app", value: "#eef3fa" }],
-    },
     controls: {
       matchers: {
         color: /(background|color)$/i,

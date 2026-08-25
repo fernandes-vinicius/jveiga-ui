@@ -1,7 +1,6 @@
 {
-  "name": "@jveiga-ui/ui",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@fernandes-vinicius/jveiga-ui",
+  "version": "0.1.0",
   "description": "Componentes construídos com shadcn/ui + Radix + CVA como scaffolding interno; compilado (tsdown) e publicado como pacote npm real, importado direto pelos apps consumidores (roadmap passo 3-4).",
   "type": "module",
   "main": "./dist/index.js",
@@ -15,6 +14,15 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandes-vinicius/jveiga-ui.git",
+    "directory": "packages/ui"
+  },
   "scripts": {
     "build": "tsdown",
     "lint": "biome check .",
@@ -22,9 +30,9 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@jveiga-ui/icons": "workspace:*",
-    "@jveiga-ui/tokens": "workspace:*",
-    "@jveiga-ui/utils": "workspace:*",
+    "@fernandes-vinicius/jveiga-icons": "workspace:*",
+    "@fernandes-vinicius/jveiga-tokens": "workspace:*",
+    "@fernandes-vinicius/jveiga-utils": "workspace:*",
     "class-variance-authority": "^0.7.1",
     "cmdk": "^1.1.1",
     "date-fns": "^4.4.0",

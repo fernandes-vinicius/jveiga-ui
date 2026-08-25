@@ -1,5 +1,5 @@
-import { XIcon } from "@jveiga-ui/icons";
-import { cn } from "@jveiga-ui/utils";
+import { XIcon } from "@fernandes-vinicius/jveiga-icons";
+import { cn } from "@fernandes-vinicius/jveiga-utils";
 import { Dialog as DialogPrimitive } from "radix-ui";
 import type * as React from "react";
 

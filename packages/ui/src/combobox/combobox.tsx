@@ -1,5 +1,5 @@
-import { CheckIcon, ChevronDownIcon } from "@jveiga-ui/icons";
-import { cn } from "@jveiga-ui/utils";
+import { CheckIcon, ChevronDownIcon } from "@fernandes-vinicius/jveiga-icons";
+import { cn } from "@fernandes-vinicius/jveiga-utils";
 import * as React from "react";
 import { Button } from "../button";
 import {

@@ -22,6 +22,16 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/*
+ * `dark:` vira ativo quando um ancestral (normalmente <html>) tem a
+ * classe `.dark` — mesma convenção do jveiga-admin (next-themes escreve
+ * essa classe automaticamente). O jveiga-dash-comercial não tem dark
+ * mode, então os valores abaixo (bloco `.dark`) foram desenhados a
+ * partir da paleta de marca (azul, ver --jv-blue-*), não extraídos de
+ * nenhum app de origem.
+ */
+@custom-variant dark (&:is(.dark *));
+
 :root {
   /* Neutros (crus, de jveiga-dash-comercial) */
   --jv-ink: #0f172a;
@@ -113,6 +123,47 @@
   --chart-6: var(--jv-sky-600);
   --chart-7: var(--jv-teal-600);
   --chart-8: var(--jv-pink-600);
+}
+
+.dark {
+  /* Neutros escuros (desenhados, sem origem no dash-comercial — ver nota
+     acima). Navy em vez de cinza puro, pra combinar com a identidade de
+     marca azul em vez de virar um dark mode genérico. */
+  --jv-dark-bg: #0b1220;
+  --jv-dark-card: #111b30;
+  --jv-dark-accent: #14213d;
+  --jv-dark-ink: #e8edf7;
+  --jv-dark-line: #1f2b45;
+  --jv-dark-line-soft: #17233a;
+  --jv-dark-line-strong: #2b3b5c;
+
+  --background: var(--jv-dark-bg);
+  --foreground: var(--jv-dark-ink);
+
+  --card: var(--jv-dark-card);
+  --card-foreground: var(--jv-dark-ink);
+  --popover: var(--jv-dark-card);
+  --popover-foreground: var(--jv-dark-ink);
+
+  /* Marca continua azul nos dois temas — só os neutros trocam. */
+  --primary: var(--jv-blue-700);
+  --primary-foreground: #ffffff;
+
+  --secondary: var(--jv-dark-line-soft);
+  --secondary-foreground: var(--jv-dark-ink);
+
+  --muted: var(--jv-dark-line-soft);
+  --muted-foreground: var(--jv-ink-dim);
+
+  --accent: var(--jv-dark-accent);
+  --accent-foreground: var(--jv-blue-100);
+
+  --destructive: var(--jv-rose-600);
+  --destructive-foreground: #ffffff;
+
+  --border: var(--jv-dark-line);
+  --input: var(--jv-dark-line-strong);
+  --ring: var(--jv-blue-600);
 }
 
 @theme inline {
