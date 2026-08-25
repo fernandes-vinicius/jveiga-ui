@@ -13,12 +13,21 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
-  viteFinal: async (viteConfig) => {
+  viteFinal: async (viteConfig, options) => {
     viteConfig.plugins = [
       ...(viteConfig.plugins ?? []),
       react(),
       tailwindcss(),
     ];
+    // GitHub Pages serve este projeto em /jveiga-ui/, não na raiz do domínio.
+    // Só aplica quando o workflow de deploy define STORYBOOK_BASE_PATH — o
+    // build usado pelo Test Runner no CI continua servido na raiz.
+    if (
+      options.configType === "PRODUCTION" &&
+      process.env.STORYBOOK_BASE_PATH
+    ) {
+      viteConfig.base = process.env.STORYBOOK_BASE_PATH;
+    }
     return viteConfig;
   },
 };
